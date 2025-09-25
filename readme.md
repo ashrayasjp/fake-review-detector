@@ -28,18 +28,18 @@ source venv/bin/activate
    pip install -r requirements.txt
    ```
 4. **Create Files:**
-```bash
-Ensure to create an empty run.log file inside the logs/ directory to store logs.
-```
-4. **Train the model**
+   ```bash
+   Ensure to create an empty run.log file inside the logs/ directory to store logs.
+   ```
+5. **Train the model**
    ```bash
    python -m src.train_model
    ```
-5. **Run predictions (optional)**
+6. **Run predictions (optional)**
    ```bash
    python -m src.predict
    ```
-4. **Run the Streamlit app**
+7. **Run the Streamlit app**
    ```bash
     streamlit run app/app.py
    ```
