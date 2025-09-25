@@ -9,10 +9,6 @@ venv/
 logs/*
 !logs/.gitkeep
 
-# Models 
-models/*
-!models/.gitkeep
-
 # OS files
 .DS_Store
 Thumbs.db
