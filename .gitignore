@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Logs 
+logs/*
+!logs/.gitkeep
+
+# Models 
+models/*
+!models/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
