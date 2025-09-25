@@ -27,6 +27,5 @@ def train():
     print(classification_report(y_test, y_pred))
     
     save_model(model, MODEL_PATH)
-
 if __name__ == "__main__":
     train()
