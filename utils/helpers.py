@@ -5,16 +5,10 @@ from utils.logger import logger
 from src.config import DATA_PATH
 
 def load_dataset(path=DATA_PATH):
-    """
-    Load dataset, map CG/OR to fake/genuine, and clean text
-    Works with large datasets without editing CSV
-    """
+   
     df = pd.read_csv(path)
     
-    # Map labels
     df['label'] = df['label'].map({'OR': 'genuine', 'CG': 'fake'})
-    
-    # Use 'text_' column instead of 'review_text'
     df["cleaned"] = df["text_"].apply(clean_text)
     
     logger.info(f"Dataset loaded with {len(df)} reviews")
